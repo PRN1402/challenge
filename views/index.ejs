@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Challenge</title>
+  <link rel="stylesheet" href="../public/style.css">
+</head>
+<header>
+    <img src="https://www.wildcodeschool.com/assets/logo_main-e4f3f744c8e717f1b7df3858dce55a86c63d4766d5d9a7f454250145f097c2fe.png" alt="Wild Code School logo" />
+    <h1>
+      Les Argonautes
+  </h1>
+</header>
+
+<body><!-- New member form -->
+  <h2>Ajouter un(e) Argonaute</h2>
+  <div>
+  <form class="new-member-form" action="/argos" method="POST">
+    <label for="name">Nom de l&apos;Argonaute</label>
+    <input id="toto" type="text" placeholder="name" name="name">
+    
+    <button type="submit">Submit</button>
+  </form>
+   
+  </div>
+  <!-- Member list -->
+  <h2>Membres de l'équipage</h2>
+
+  <section class="member-list">
+    <% for(var i=0; i<messages.length; i++) {%>
+      <span class="member-item"><%= messages[i].name %>
+      </span>
+      <% } %>
+    </section>
+  
+</body>
+
+<footer>
+  <p>Réalisé par Jason en Anthestérion de l'an 515 avant JC</p>
+</footer><!-- Header section -->
+
+</html>
